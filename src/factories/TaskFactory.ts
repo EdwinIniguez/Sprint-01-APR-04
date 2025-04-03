@@ -15,6 +15,7 @@ export class TaskFactory {
                 const subtask = new SimpleTask(sender, `${name} - subtarea ${i + 1}`, 4);
                 compositeTask.addSubtask(subtask);
             }
+            return compositeTask;
         } else {
             return new SimpleTask(sender, name, estimatedHours);
         }
